@@ -1,0 +1,41 @@
+/* App Container */
+.app-container1 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Sidebar and Main Content Container */
+.content-container1 {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar1 {
+  position:fixed;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 16px;
+  overflow-y: auto;
+  height: 81vh;
+  /* padding-bottom: 170px; */
+}
+
+/* Main Content */
+.main-content1 {
+  /* z-index: -5; */
+  flex: 1;
+  padding: 16px;
+  padding-left: 30px;
+  overflow-y: auto;
+  margin-top: 90px;
+  margin-left: 27vw;
+}
+
+/* Styles for screens 1200px and smaller */
+@media (max-width: 1200px) {
+  .main-content1 {
+    margin-left: 0;
+    width: 100%;
+}
+}
